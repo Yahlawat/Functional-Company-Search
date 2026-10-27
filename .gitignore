@@ -1,5 +1,19 @@
-# Exclude virtual environment
+# Python
+__pycache__/
+*.py[cod]
 .venv/
+venv/
 
-# exclude drafts folder
+# Notebooks
+.ipynb_checkpoints/
+
+# Drafts
 /drafts/
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
+
+# Files waiting to be deleted by hand
+_to_delete/

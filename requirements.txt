@@ -1,18 +1,16 @@
-# Core Data Processing
-pandas==2.2.0
-numpy==1.26.4
+# Core data processing
+pandas>=2.2
+matplotlib>=3.8
 
-# Deep Learning & NLP
-torch==2.2.0
-transformers==4.36.2
-nltk==3.8.1
-spacy==3.7.2
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1.tar.gz
+# NLP and embeddings
+torch>=2.2
+sentence-transformers>=3.0
+nltk>=3.9
 
-# Data Retrieval
-yfinance==0.2.56
+# Only needed to pull fresh data (REFRESH_DATA = True)
+yfinance>=0.2.40
+lxml>=5.0
 
-# Jupyter Environment
-jupyter==1.0.0
-notebook==7.0.8
-ipywidgets==8.1.2
+# Jupyter environment
+jupyter
+ipywidgets
