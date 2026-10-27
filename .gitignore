@@ -7,6 +7,9 @@ venv/
 # Notebooks
 .ipynb_checkpoints/
 
+# Sentence embeddings: rebuilt by the notebook on every run
+Data/Embeddings/
+
 # Drafts
 /drafts/
 

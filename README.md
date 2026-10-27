@@ -78,7 +78,7 @@ pip install -r requirements.txt
 
 ### Data
 
-The business descriptions are included in `Data/company_bd_data.csv`. To pull fresh data from Wikipedia and Yahoo Finance instead, set `REFRESH_DATA = True` in the notebook. This is slow and can hit the same Yahoo Finance rate limit.
+The business descriptions are included in `Data/company_bd_data.csv`. To pull fresh data from Wikipedia and Yahoo Finance instead, set `REFRESH_DATA = True` in the notebook. This is slow and can hit the same Yahoo Finance rate limit. The sentence embeddings aren't in the repo; the notebook rebuilds them each time it runs.
 
 ### Run
 
@@ -97,7 +97,7 @@ The first run downloads the SBERT model from Hugging Face (about 440 MB). After 
 ├── Data/
 │   ├── company_bd_data.csv                     # Company list and business descriptions
 │   ├── similarity_results.csv                  # Top 5 for the example query
-│   └── Embeddings/bd_embeddings.pt             # Sentence embeddings
+│   └── Embeddings/bd_embeddings.pt             # Sentence embeddings (made by the notebook, not tracked)
 ├── images/                                     # Figures saved by the notebook
 ├── requirements.txt
 ├── LICENSE
@@ -106,4 +106,4 @@ The first run downloads the SBERT model from Hugging Face (about 440 MB). After 
 
 ## License
 
-Released under the [MIT License](LICENSE).
+The code is released under the [MIT License](LICENSE). The business descriptions in `Data/company_bd_data.csv` come from Yahoo Finance and the companies themselves. They're included for research and educational use only and aren't covered by the MIT License.
